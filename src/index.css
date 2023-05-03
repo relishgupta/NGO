@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* font-family: 'Dancing Script', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&display=swap');
+/* font-family: 'Cinzel', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&family=Roboto:wght@300&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
