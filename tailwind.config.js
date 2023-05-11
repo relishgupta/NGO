@@ -4,7 +4,16 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'gr':'#5c8148',
+        'ltgr':'#76a45b',
+        '2ltgr':'#8bb650',
+        'gra':'#a1c181',
+        'ltyl':'#d6ec89',
+        '4ltgr':'#b3e093',
+      },
+    },
   },
   variants:{},
   plugins: [],

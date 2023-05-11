@@ -3,8 +3,8 @@ import { Outlet } from "react-router-dom";
 const Gallery = () => {
   return (
     <>
+    <div className="pt-20 h-screen w-full bg-ltgr">Gallery</div>
     <Outlet/>
-    <div className="pt-20 h-screen w-full bg-green-600">Gallery</div>
     </>
   )
 }
