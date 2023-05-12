@@ -5,7 +5,7 @@ import Projects from "../components/projects";
 import Team from "../components/team";
 import Footer from "../components/footer";
 import { Outlet } from "react-router-dom";
-
+    
 const Homepage = () => {
   return (
     <>

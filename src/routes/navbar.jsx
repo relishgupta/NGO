@@ -50,21 +50,21 @@ const Navbar = () => {
                 ))}
             </ul>
 
-            <div onClick={()=>setNav(!nav)} className='cursor-pointer pr-5 z-10 text-white md:hidden'>
+            <div onClick={()=>setNav(!nav)} className='absolute right-6 cursor-pointer text-white md:hidden'>
             {nav?<FaTimes size={30} />:<FaBars size={30} />}
             </div>
 
             {nav && (
-            <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-ltgr text-white'>
+            <ul className=' flex flex-col justify-center items-center mt-[27.8rem] bg-green-800 text-white'>
             {li.map(({id,link})=>(
-                <li key={id} className="px-4 cursor-pointer capitalize py-6 text-4xl">
+                <li key={id} className="border-b px-10 cursor-pointer capitalize py-5 text-2xl">
                     <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>
                         {link}
                     </Link>
                 </li>
             ))}
             </ul>
-        )}
+            )}
         </div>
         <Outlet/>
     </>
