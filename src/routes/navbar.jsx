@@ -35,7 +35,7 @@ const Navbar = () => {
     const Navigate=()=>navigate('/')
   return (
     <>
-        <div className='fixed flex justify-between items-center h-20 w-full text-white bg-gr '>
+        <div className='fixed flex justify-between items-center h-20 w-full text-white bg-gr z-10'>
             <div className='flex items-center'>
                 <Link to='home' smooth duration={500}>
                     <img src={logo} alt='logo' className='h-20 w-20 ml-5 cursor-pointer' onClick={Navigate} />
