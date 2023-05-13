@@ -13,6 +13,9 @@ module.exports = {
         'ltyl':'#d6ec89',
         '4ltgr':'#b3e093',
       },
+      screens:{
+        'sz':'1900px',
+      },
     },
   },
   variants:{},
