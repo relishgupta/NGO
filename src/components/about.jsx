@@ -2,7 +2,7 @@ import about from '../assets/about.png';
 
 const About = () => {
   return (
-    <div name='about' className="flex flex-col pt-28 h-screen w-full bg-gr">
+    <div name='about' className="flex flex-col pt-28 -mt-4 h-screen w-full bg-gr">
       <div className="underline border-gray-500 pl-5 xl:pl-80 xl:pt-10 sz:pt-28 text-5xl md:text-6xl text-blue-800 ">
         About
       </div>

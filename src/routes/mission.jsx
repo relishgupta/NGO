@@ -1,11 +1,16 @@
 import { Outlet } from "react-router-dom";
 
-const Missions = () => {
+const Mission = () => {
   return (
     <>
-    <div name="missions" className="pt-20 min-h-screen w-full bg-2ltgr">
+    <div name="mission" className="min-h-screen -mt-4 w-full bg-gra">
+      <div className="h-52 bg-gr">
+        <h1 className="flex justify-center pt-32 text-6xl underline">
+          MISSION
+        </h1>
+      </div>
       <div className="pl-5 text-sm text-black">
-          <p className="my-1 border-l-4 border-orange-500 pb-3 text-blue-800 text-5xl md:text-6xl">Missions</p>
+          <p className="my-1 border-l-4 border-orange-500 pb-3 text-blue-800 text-5xl md:text-6xl">Mission</p>
           <p>1. To work for the upliftment of youth community to organise Youth activities for National Character building. Give financial help to poor and needful people.</p>
           <p>2. To promote the cause of education on modern and scientific lines and make educational institute such as school buildings and make memorial places and other works for Martyrs.</p>
           <p>3. To make good environment with plantation drive in every area and also make resources such as hand pumps, ponds and in dry areas.</p>
@@ -27,4 +32,4 @@ const Missions = () => {
   )
 }
 
-export default Missions;
+export default Mission;

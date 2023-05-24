@@ -1,3 +1,4 @@
+import Home from "../components/home";
 import About from "../components/about";
 import Aims from "../components/aims";
 import Services from "../components/services";
@@ -9,6 +10,7 @@ const Homepage = () => {
   return (
     <>
         <Outlet/>
+        <Home/>
         <About/>
         <Aims/>
         <Services/>
