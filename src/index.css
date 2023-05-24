@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.cursive{
-  font-family: "Dancing Script", cursive;
+.acc{
+  font-family: 'Teko', sans-serif;
 }

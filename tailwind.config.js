@@ -6,12 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'gr':'#5c8148',
-        'ltgr':'#76a45b',
-        '2ltgr':'#8bb650',
-        'gra':'#a1c181',
-        'ltyl':'#d6ec89',
-        '4ltgr':'#b3e093',
+        'gr':'#386641',
+        'ltgr':'#6a994e',
+        'gra':'#a7c957',
+        'crm':'#f2e8cf',
+        'mrn':'#bc4749',
       },
       screens:{
         'sz':'1900px',
