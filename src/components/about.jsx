@@ -1,7 +1,7 @@
 import banner from '../assets/banner.jpg';
 import rc from '../assets/rc.jpg';
 import award from '../assets/award.png';
-import home1 from '../assets/home1.jpg';
+// import home1 from '../assets/home1.jpg';
 
 const About = () => {
   return (
