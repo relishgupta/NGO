@@ -16,12 +16,15 @@ const Navbar = () => {
     }
     const ToMission=()=>{
         navigate('/mission')
+        setNavb(false);
     }
     const ToGallery=()=>{
         navigate('/gallery')
+        setNavb(false);
     }
     const ToServices=()=>{
         navigate('/')
+        setNavb(false);
     }
     return (
         <>
@@ -44,7 +47,7 @@ const Navbar = () => {
                             <Link to='gallery' smooth duration={500} onClick={ToGallery} >gallery</Link>
                         </li>
                         <li className="border-t border-black px-10 cursor-pointer capitalize py-5 text-2xl hover:underline hover:text-green-800">
-                            <Link to='contact' smooth duration={500}>contact</Link>
+                            <Link to='contact' onClick={()=>setNavb(false)} smooth duration={500}>contact</Link>
                         </li>
                         </ul>
                     </>

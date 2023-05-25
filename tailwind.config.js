@@ -11,6 +11,7 @@ module.exports = {
         'gra':'#a7c957',
         'crm':'#f2e8cf',
         'mrn':'#bc4749',
+        'snake':'#313715',
       },
       screens:{
         'sz':'1900px',

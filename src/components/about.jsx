@@ -1,19 +1,29 @@
-import about from '../assets/about.png';
+import banner from '../assets/banner.jpg';
+import rc from '../assets/rc.jpg';
+import award from '../assets/award.png';
+import home1 from '../assets/home1.jpg';
 
 const About = () => {
   return (
-    <div name='about' className="flex flex-col pt-28 -mt-4 h-screen w-full bg-gr">
-      <div className="underline border-gray-500 pl-5 xl:pl-80 xl:pt-10 sz:pt-28 text-5xl md:text-6xl text-blue-800 ">
-        About
+      <div name='about' className="pt-32 flex flex-col -mt-4 min-h-screen w-full bg-snake">
+      <div className='pt-3 bg-orange-500 h-96'>
+        <div className="z-100 acc mx-5 md:mx-20 border-l-4 border-snake pl-2 md:pl-8 text-5xl md:text-7xl text-black underline">
+          About us
+        </div>
+        <div className=''>
+        <p className='p-4 xl:text-2xl xl:pl-28 text-white'>
+          The name of organisation is Anmol Cultural Club situated at Sunderbani, district Rajouri, J&K. The office of the organisation shall be at Sunderbani and Jammu Head Office(J&K UT).
+          The area of operation of organisation shall be J&K UT and other states in particular and Media general.
+        </p>
+        <div className='flex flex-col md:flex-row justify-around items-center mt-5 sz:mt-32'>
+          <img src={banner} alt="banner" className='drop-shadow-2xl h-80'/>
+          <img src={rc} alt="registration" className='hidden xl:block drop-shadow-2xl h-96 w-72'/>
+          <img src={award} alt="award" className='hidden xl:block drop-shadow-2xl h-80'/>
+        </div>
+        </div>
       </div>
-      <div className='flex flex-col xl:flex-row place-items-end xl:items-start'>
-      <p className='p-4 xl:text-xl xl:pl-60 sz:pl-80'>
-        The name of organisation is Anmol Cultural Club situated at Sunderbani, district Rajouri, J&K. The office of the organisation shall be at Sunderbani and Jammu Head Office(J&K UT).
-        The area of operation of organisation shall be J&K UT and other states in particular and Media general.
-      </p>
-      <img src={about} alt="about" className='drop-shadow-2xl pr-10 xl:pr-80 sz:pr-96 h-72 xl:h-96 sz:h-[30rem]'/>
       </div>
-    </div>
+  
   )
 }
 export default About;
