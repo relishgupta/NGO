@@ -31,7 +31,7 @@ const Navbar = () => {
                 {navb && (
                     <>
                         <div onClick={()=>{setNavb(false)}} className='fixed left-0 top-0 h-full w-full'/>
-                        <ul className='fixed z-30 w-[27rem] bg-gray-400 text-blue-800'>
+                        <ul className='fixed z-40 w-[27rem] bg-gray-400 text-blue-800'>
                         <FaTimes size={30} className="absolute right-8 mt-8 text-black cursor-pointer" onClick={()=>{setNavb(false)}}/>
                         <img src={logo} alt='logo' className='h-20 ml-6 mt-2 cursor-pointer' onClick={ToHome} />
                         <li className="border-t border-black px-10 cursor-pointer capitalize py-5 text-2xl hover:underline hover:text-green-800">
@@ -53,7 +53,7 @@ const Navbar = () => {
                     </>
                 )}
                 <div className="p-2 flex justify-center ">
-                    <div className='fixed bg-gray-400 rounded-full w-80 md:w-full xl:w-[76rem] flex justify-between items-center z-10'>
+                    <div className='fixed bg-gray-400 rounded-full w-80 md:w-full xl:w-[76rem] sz:w-[90rem] flex justify-between items-center z-30'>
                         <Link to='home' smooth duration={500}>
                             <img src={logo} alt='logo' className='h-20 ml-6 cursor-pointer' onClick={ToHome} />
                         </Link>

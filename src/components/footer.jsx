@@ -21,34 +21,34 @@ const Footer = () => {
           <span className="pt-1 pl-2 md:pl-0">
             <p className="flex text-yellow-500 text-lg">
               <HiLocationMarker size={30} className="" />
-              <span className="md:border-b border-black  text-crm text-2xl">
+              <span className="lg:border-b border-black  text-crm text-2xl">
                 Office at village Ainpur, Tehsil: Bhajwal, Sunderbani, District: Rajouri, J&K, India
               </span><br />
             </p>
             <p className="pt-2 flex text-lg">
               <FaUser size={20} className="text-black" />
-              <span className="pl-1 md:border-b border-black  text-crm text-2xl">
+              <span className="pl-1 lg:border-b border-black  text-crm text-2xl">
                 Chairman/President: Zorawar Singh Khalsa
               </span>
             </p>
           </span>
-          <span className="flex flex-col pl-7 md:pl-0">
-            <h1 className="md:border-b border-black pt-8 md:pt-1 text-2xl text-black ">Quick links</h1>
+          <span className="flex flex-col pl-7 lg:pl-0">
+            <h1 className="lg:border-b border-black pt-8 md:pt-1 text-2xl text-black ">Quick links</h1>
             <p onClick={ToGallery} className="cursor-pointer text-xl pt-1 text-crm">Gallery</p>
             <Link onClick={ToHome} to='about' smooth duration={500} className="cursor-pointer text-xl text-crm">About</Link>
             <Link to='mission' smooth duration={500} onClick={ToMissions} className="cursor-pointer text-xl text-crm">Mission</Link>
             <Link onClick={ToHome} smooth duration={500} to='services' className="cursor-pointer text-xl text-crm">Services</Link>
           </span>
           <span className="mt-8 md:mt-0 text-center md:text-start -mb-9">
-            <p className="flex justify-center md:justify-start pt-2 text-md md:text-lg">
+            <p className="flex justify-center lg:justify-start pt-2 text-md md:text-lg">
               <BsFillTelephoneFill className=" text-green-500" size={20} />
-              <span className="md:border-b border-black  pl-2 text-lg md:text-2xl text-crm">
+              <span className="lg:border-b border-black  pl-2 text-lg md:text-2xl text-crm">
                 9419131723, 9622360431
               </span>
             </p>
-            <a href="mailto:mrzsingh43Gmail.com" className="flex justify-center md:justify-start text-lg text-crm" target="_blank" rel="noreferrer">
+            <a href="mailto:mrzsingh43Gmail.com" className="flex justify-center lg:justify-start text-lg text-crm" target="_blank" rel="noreferrer">
               <SiGmail size={20} className='text-orange-300' />
-              <span className="md:border-b border-black lack pl-2 text-lg md:text-2xl hover:text-black">
+              <span className="lg:border-b border-black pl-2 text-lg md:text-2xl hover:text-black">
                 mrzsingh43@gmail.com
               </span>
             </a>
