@@ -11,7 +11,6 @@ const Navbar = () => {
 
     const ToHome = () => {
         navigate('/')
-       
         setNavb(false);
     }
     const ToMission=()=>{
@@ -26,32 +25,81 @@ const Navbar = () => {
         navigate('/')
         setNavb(false);
     }
+
+    const toggleOffcanvas = () => {
+    setNavb(!navb);
+    };
     return (
         <>
-                {navb && (
-                    <>
-                        <div onClick={()=>{setNavb(false)}} className='fixed left-0 top-0 h-full w-full'/>
-                        <ul className='fixed z-40 w-[27rem] bg-gray-400 text-blue-800'>
-                        <FaTimes size={30} className="absolute right-8 mt-8 text-black cursor-pointer" onClick={()=>{setNavb(false)}}/>
-                        <img src={logo} alt='logo' className='h-20 ml-6 mt-2 cursor-pointer' onClick={ToHome} />
-                        <li className="border-t border-black px-10 cursor-pointer capitalize py-5 text-2xl hover:underline hover:text-green-800">
-                            <Link to='home' smooth duration={500} onClick={ToHome}>home</Link>
-                        </li>
-                        <li className="border-t border-black px-10 cursor-pointer capitalize py-5 text-2xl hover:underline hover:text-green-800">
-                            <Link to='' smooth duration={500} onClick={ToMission}>mission</Link>
-                        </li>
-                        <li className="border-t border-black px-10 cursor-pointer capitalize py-5 text-2xl hover:underline hover:text-green-800">
-                            <Link to='services' smooth duration={500} onClick={ToServices}>services</Link>
-                        </li>
-                        <li className="border-t border-black px-10 cursor-pointer capitalize py-5 text-2xl hover:underline hover:text-green-800">
-                            <Link to='gallery' smooth duration={500} onClick={ToGallery} >gallery</Link>
-                        </li>
-                        <li className="border-t border-black px-10 cursor-pointer capitalize py-5 text-2xl hover:underline hover:text-green-800">
-                            <Link to='contact' onClick={()=>setNavb(false)} smooth duration={500}>contact</Link>
-                        </li>
-                        </ul>
-                    </>
-                )}
+          <div>
+            {navb && (
+              <>
+                <div className="fixed left-0 top-0 w-full h-full bg-black opacity-50 z-40" onClick={toggleOffcanvas}/>
+                  <div className="fixed left-0 top-0 w-64 bg-gray-400 h-screen transform translate-x-0 transition-transform duration-300 ease-in-out z-50">
+                    <h1 className='p-3 acc text-xl text-orange-600 underline '>Anmolculturalclub</h1>
+                    <button className="absolute right-4 top-4 text-blue-800" onClick={toggleOffcanvas}>
+                      <FaTimes />
+                    </button>                    <ul className="py-8 text-lg">
+                      <li className="pl-6 py-2">
+                        <Link
+                          to="home"
+                          smooth
+                          duration={500}
+                          onClick={ToHome}
+                          className="text-blue-800 hover:text-gr hover:underline cursor-pointer"
+                        >
+                          Home
+                        </Link>
+                      </li>
+                      <li className="pl-6 py-2">
+                        <Link
+                          to="mission"
+                          smooth
+                          duration={500}
+                          onClick={ToMission}
+                          className="text-blue-800 hover:text-gr hover:underline cursor-pointer"
+                        >
+                          Mission
+                        </Link>
+                      </li>
+                      <li className="pl-6 py-2">
+                        <Link
+                          to="services"
+                          smooth
+                          duration={500}
+                          onClick={ToServices}
+                          className="text-blue-800 hover:text-gr hover:underline cursor-pointer"
+                        >
+                          Services
+                        </Link>
+                      </li>
+                      <li className="pl-6 py-2">
+                        <Link
+                          to="gallery"
+                          smooth
+                          duration={500}
+                          onClick={ToGallery}
+                          className="text-blue-800 hover:text-gr hover:underline cursor-pointer"
+                        >
+                          Gallery
+                        </Link>
+                      </li>
+                      <li className="pl-6 py-2">
+                        <Link
+                          to="contact"
+                          smooth
+                          duration={500}
+                          onClick={toggleOffcanvas}
+                          className="text-blue-800 hover:text-gr hover:underline cursor-pointer"
+                        >
+                          Contact
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+            </>
+            )}
+          </div>
                 <div className="p-2 flex justify-center ">
                     <div className='fixed bg-gray-400 rounded-full w-80 md:w-full xl:w-[76rem] sz:w-[90rem] flex justify-between items-center z-30'>
                         <Link to='home' smooth duration={500}>
@@ -76,9 +124,9 @@ const Navbar = () => {
                                 </li>
                         </ul>
 
-                        <div onClick={() => setNavb(true)} className='absolute right-10 cursor-pointer text-black md:hidden z-100'>
-                            <FaBars size={30} />
-                        </div>
+                        <button className="absolute right-10 cursor-pointer z-50 md:hidden" onClick={toggleOffcanvas}>
+                          {navb ? <FaTimes/> : <FaBars size={25}/>}
+                        </button>
                     </div>
                 </div>
             <Outlet />

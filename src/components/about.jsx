@@ -1,6 +1,6 @@
 import banner from '../assets/banner.jpg';
 import rc from '../assets/rc.jpg';
-import award from '../assets/award.png';
+import award from '../assets/award.jpg';
 
 const About = () => {
   return (
