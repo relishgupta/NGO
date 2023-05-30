@@ -6,36 +6,52 @@ import ration from '../assets/ration.png';
 import youth from '../assets/youth.png';
 
 const Services = () => {
+//   const services=[
+//   {
+//     id:1,
+//     src:'awareness',
+//     title:'Youth affairs',
+//   },
+//   {
+//     id:2,
+//     src:'environment',
+//     title:'Disaster management',
+//   },
+//   {
+//     id:3,
+//     src:'awareness',
+//     title:'Youth affairs',
+//   }
+// ]
   return (
-    <div name='services' className="pt-4 min-h-screen w-full bg-gra">
-
-      <span className="acc relative top-28 sz:top-40 z-20 mx-5 md:mx-20 border-l-4 border-orange-600 pl-2 md:pl-8 text-4xl md:text-7xl text-blue-800 underline">
+    <div name='services' className="pt-4 min-h-screen w-full bg-pnk">
+      <span className="acc relative top-24 sz:top-28 z-20 mx-5 md:mx-20 border-l-4 border-orange-600 pl-2 md:pl-8 text-4xl md:text-7xl text-blue-800 underline">
         Our Programmes
       </span>
-      <div className='grid grid-rows-2 grid-flow-col gap-10 mx-16 sz:mx-[30rem] cursor-pointer'>
-        <span>
-          <img src={awareness} alt=""/>
-          <span>Youth affairs</span>
+      <div className='grid grid-rows-6 sm:grid-rows-3 xl:grid-rows-2 grid-flow-col gap-10 cursor-pointer pt-36 sz:pt-40 text-xl pb-20'>
+        <span className='flex flex-col items-center '>
+          <img src={awareness} alt="" className='border-2 border-gr h-96 w-80 hover:scale-105 duration-200'/>
+          <span className='border border-gray-800 bg-gray-800 text-white text-lg px-32 rounded-lg'>Youth affairs</span>
         </span>
-        <span>
-          <img src={environment} alt=""/>
-          <span>Disaster management</span>
+        <span className='flex flex-col items-center'>
+          <img src={environment} alt="" className='border-2 border-gr h-96 w-80 hover:scale-105 duration-200'/>
+          <span className='border border-gray-800 bg-gray-800 text-white text-lg px-20 rounded-lg'>Disaster management</span>
         </span>
-        <span>
-          <img src={blood} alt=""/>
-          <span>Health and Family welfare</span>
+        <span className='flex flex-col items-center'>
+          <img src={blood} alt="" className='border-2 border-gr h-96 w-80 hover:scale-105 duration-200'/>
+          <span className='border border-gray-800 bg-gray-800 text-white text-lg px-14 lg:px-20 rounded-lg'>Health and Family welfare</span>
         </span>
-        <span>
-          <img src={plantation} alt=""/>
-          <span>Plantation drive</span>
+        <span className='flex flex-col items-center'>
+          <img src={plantation} alt="" className='border-2 border-gr h-96 w-80 hover:scale-105 duration-200'/>
+          <span className='border border-gray-800 bg-gray-800 text-white text-lg px-28 rounded-lg'>Plantation drive</span>
         </span>
-        <span>
-          <img src={ration} alt=""/>
-          <span>Women empowerment</span>
+        <span className='flex flex-col items-center'>
+          <img src={ration} alt="" className='border-2 border-gr h-96 w-80 hover:scale-105 duration-200'/>
+          <span className='border border-gray-800 bg-gray-800 text-white text-lg px-20 rounded-lg'>Women empowerment</span>
         </span>
-        <span>
-          <img src={youth} alt=""/>
-          <span>Education and Literacy</span>
+        <span className='flex flex-col items-center'>
+          <img src={youth} alt="" className='border-2 border-gr h-96 w-80 hover:scale-105 duration-200'/>
+          <span className='border border-gray-800 bg-gray-800 text-white text-lg px-20 rounded-lg'>Education and Literacy</span>
         </span>
       </div>
     </div>
