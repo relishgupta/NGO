@@ -12,7 +12,7 @@ module.exports = {
         'crm':'#f2e8cf',
         'mrn':'#bc4749',
         'snake':'#313715',
-        'pnk':'#f1c0e8',
+        'pnk':'#1e2f23',
       },
       screens:{
         'sz':'1900px',

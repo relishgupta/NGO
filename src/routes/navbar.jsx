@@ -36,10 +36,11 @@ const Navbar = () => {
               <>
                 <div className="fixed left-0 top-0 w-full h-full bg-black opacity-50 z-40" onClick={toggleOffcanvas}/>
                   <div className="fixed left-0 top-0 w-64 bg-gray-400 h-screen transform translate-x-0 transition-transform duration-300 ease-in-out z-50">
-                    <h1 className='p-3 acc text-xl text-orange-600 underline '>Anmolculturalclub</h1>
+                    <h1 className='p-3 acc text-3xl text-orange-600 underline '>Anmolculturalclub</h1>
                     <button className="absolute right-4 top-4 text-blue-800" onClick={toggleOffcanvas}>
                       <FaTimes />
-                    </button>                    <ul className="py-8 text-lg">
+                    </button>                    
+                    <ul className="py-8 text-xl">
                       <li className="pl-6 py-2">
                         <Link
                           to="home"

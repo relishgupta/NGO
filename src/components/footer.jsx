@@ -25,8 +25,8 @@ const Footer = () => {
                 Office at village Ainpur, Tehsil: Bhajwal, Sunderbani, District: Rajouri, J&K, India
               </span><br />
             </p>
-            <p className="pt-2 flex text-lg">
-              <FaUser size={20} className="text-black" />
+            <p className="pt-2 flex text-lg pl-1">
+              <FaUser size={20} className=" text-black" />
               <span className="pl-1 lg:border-b border-black  text-crm text-2xl">
                 Chairman/President: Zorawar Singh Khalsa
               </span>
