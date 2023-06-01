@@ -54,7 +54,7 @@ const Footer = () => {
             <p className="flex text-yellow-500 text-lg">
               <HiLocationMarker size={30} className="" />
               <span className="lg:border-b border-black  text-crm text-2xl">
-                Office at village Ainpur, Tehsil: Bhajwal, Sunderbani, District: Rajouri, J&K, India
+                Office at Village: Ainpur, Bhajwal, Tehsil: Sunderbani, District: Rajouri, UT: J&K
               </span><br />
             </p>
             <p className="pt-2 flex text-lg pl-1">
