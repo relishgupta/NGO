@@ -5,8 +5,8 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 import m1 from '../assets/m1.jpg';
-// import m2 from '../assets/m2.jpg';
-// import m3 from '../assets/m3.jpg';
+import m2 from '../assets/m2.jpg';
+import m3 from '../assets/m3.jpg';
 
 const Footer = () => {
   const team=[
@@ -18,15 +18,15 @@ const Footer = () => {
     },
     {
       id:2,
-      name:'Zorawar Singh Khalsa',
-      designation:'President',
-      src:m1,
+      name:'Jujhar Singh',
+      designation:'Vice President',
+      src:m2,
     },
     {
       id:3,
-      name:'Zorawar Singh Khalsa',
-      designation:'President',
-      src:m1,
+      name:'Harbaksh Singh',
+      designation:'Secretary',
+      src:m3,
     },
   ]
   const navigate = useNavigate();
@@ -39,7 +39,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="acc w-full bg-mrn">
+      <div name='contact' className="acc w-full bg-mrn">
       <div className="flex flex-col md:flex-row py-2">
         {team.map(({id,name,designation,src})=>(
         <div className="flex md:flex-col xl:flex-row p-5 md:mx-auto">

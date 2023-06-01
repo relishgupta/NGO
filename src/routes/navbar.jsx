@@ -36,7 +36,7 @@ const Navbar = () => {
               <>
                 <div className="fixed left-0 top-0 w-full h-full bg-black opacity-50 z-40" onClick={toggleOffcanvas}/>
                   <div className="fixed left-0 top-0 w-64 bg-gray-400 h-screen transform translate-x-0 transition-transform duration-300 ease-in-out z-50">
-                    <h1 className='p-3 acc text-3xl text-orange-600 underline '>Anmolculturalclub</h1>
+                    <h1 className='p-3 ac text-lg'> <span className='text-orange-600 underline'>Anmol Cultural Club </span><span className='text-white'> | </span> <span className='text-gr underline'> NGO </span></h1>
                     <button className="absolute right-4 top-4 text-blue-800" onClick={toggleOffcanvas}>
                       <FaTimes />
                     </button>                    
@@ -106,7 +106,7 @@ const Navbar = () => {
                         <Link to='home' smooth duration={500}>
                             <img src={logo} alt='logo' className='h-20 ml-6 cursor-pointer' onClick={ToHome} />
                         </Link>
-                        <h3 className='hidden lg:flex text-5xl acc text-orange-600 underline'>Anmolculturalclub</h3>
+                        <h3 className='hidden lg:flex text-4xl ac text-orange-600 underline'>Anmol Cultural Club <span className='text-white'> | </span> <span className='text-gr underline'> NGO </span></h3>
                         <ul className='hidden md:flex text-2xl mr-6'>
                                 <li className='p-4 capitalize cursor-pointer text-blue-800 hover:underline hover:text-green-800 hover:scale-125 duration-200'>
                                     <Link to='home' smooth duration={500} onClick={ToHome}>home</Link>
@@ -124,7 +124,6 @@ const Navbar = () => {
                                     <Link to='contact' smooth duration={500}>contact</Link>
                                 </li>
                         </ul>
-
                         <button className="absolute right-10 cursor-pointer z-50 md:hidden" onClick={toggleOffcanvas}>
                           {navb ? <FaTimes/> : <FaBars size={25}/>}
                         </button>
