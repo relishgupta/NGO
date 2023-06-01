@@ -4,8 +4,31 @@ import { SiGmail } from "react-icons/si"
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
+import m1 from '../assets/m1.jpg';
+// import m2 from '../assets/m2.jpg';
+// import m3 from '../assets/m3.jpg';
 
 const Footer = () => {
+  const team=[
+    {
+      id:1,
+      name:'Zorawar Singh Khalsa',
+      designation:'President',
+      src:m1,
+    },
+    {
+      id:2,
+      name:'Zorawar Singh Khalsa',
+      designation:'President',
+      src:m1,
+    },
+    {
+      id:3,
+      name:'Zorawar Singh Khalsa',
+      designation:'President',
+      src:m1,
+    },
+  ]
   const navigate = useNavigate();
   const ToGallery = () => {
     navigate('/gallery');
@@ -17,6 +40,17 @@ const Footer = () => {
   return (
     <>
       <div name='contact' className="acc w-full bg-mrn">
+      <div className="flex flex-col md:flex-row items-center">
+        {team.map(({id,name,designation,src})=>(
+        <div className="flex justify-between p-5">
+        <span>
+          <h2>{name}</h2>
+          <h2>{designation}</h2>
+        </span>
+          <img src={src} alt="" className=""/>
+        </div>
+        ))}
+      </div>
         <div className="border-black border-b-2 pb-11 pt-1 flex flex-col lg:flex-row lg:justify-evenly">
           <span className="pt-1 pl-2 md:pl-0">
             <p className="flex text-yellow-500 text-lg">

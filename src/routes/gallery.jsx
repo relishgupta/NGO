@@ -68,7 +68,6 @@ import a62 from '../assets/62.jpg';
 import a63 from '../assets/63.jpg';
 import a64 from '../assets/64.jpg';
 import a65 from '../assets/65.jpg';
-import a66 from '../assets/66.jpg';
 
 const Gallery = () => {
   const images=[
@@ -349,14 +348,14 @@ const Gallery = () => {
     <>
     <div name="gallery" className="min-h-screen w-full -mt-4 bg-crm">
       <div className="h-48 " style={{backgroundImage:`url(${imageGy})`,backgroundRepeat:'no-repeat',backgroundSize:'cover' }}>
-        <span className="acc flex justify-start mx-20 md:mx-20 pt-28 text-6xl underline text-black">
+        <span className="acc flex justify-start mx-10 md:mx-20 pt-28 text-6xl underline text-black">
           GALLERY
         </span>
       </div>
       <div className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sz:grid-cols-5 md:grid-flow-row gap-10 px-20 py-14 ">
           {images.map(({id,src})=>(
             <div key={id}>
-              <img src={src} alt="" className="border border-black cursor-pointer hover:scale-105 duration-200" />
+              <img src={src} alt="" className="border border-black cursor-pointer hover:scale-110 duration-200" />
             </div>
           ))}
       </div>
