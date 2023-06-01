@@ -39,15 +39,15 @@ const Footer = () => {
 
   return (
     <>
-      <div name='contact' className="acc w-full bg-mrn">
-      <div className="flex flex-col md:flex-row items-center">
+      <div className="acc w-full bg-mrn">
+      <div className="flex flex-col md:flex-row py-2">
         {team.map(({id,name,designation,src})=>(
-        <div className="flex justify-between p-5">
-        <span>
+        <div className="flex md:flex-col xl:flex-row p-5 md:mx-auto">
+          <img src={src} alt="" className="rounded-full w-32 h-32"/>
+        <span className="p-5 text-2xl">
           <h2>{name}</h2>
           <h2>{designation}</h2>
         </span>
-          <img src={src} alt="" className=""/>
         </div>
         ))}
       </div>
