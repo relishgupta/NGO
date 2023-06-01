@@ -30,12 +30,10 @@ const Footer = () => {
     },
   ]
   const navigate = useNavigate();
-  const ToGallery = () => {
-    navigate('/gallery');
-    
-  }
+  const ToGallery = () => navigate('/gallery');
   const ToMissions = () => navigate('/mission');
   const ToHome = () => navigate('/');
+  const ToDocs = () => navigate('/docs');
 
   return (
     <>
@@ -72,6 +70,7 @@ const Footer = () => {
             <Link onClick={ToHome} to='about' smooth duration={500} className="cursor-pointer text-xl text-crm">About</Link>
             <Link to='mission' smooth duration={500} onClick={ToMissions} className="cursor-pointer text-xl text-crm">Mission</Link>
             <Link onClick={ToHome} smooth duration={500} to='services' className="cursor-pointer text-xl text-crm">Services</Link>
+            <Link onClick={ToDocs} smooth duration={500} to='docs' className="cursor-pointer text-xl text-crm">Documents</Link>
           </span>
           <span className="mt-8 md:mt-0 text-center md:text-start -mb-9">
             <p className="flex justify-center lg:justify-start pt-2 text-md md:text-lg">
@@ -80,7 +79,7 @@ const Footer = () => {
                 9419131723, 9622360431
               </span>
             </p>
-            <a href="mailto:mrzsingh43Gmail.com" className="flex justify-center lg:justify-start text-lg text-crm" target="_blank" rel="noreferrer">
+            <a href="mailto:mrzsingh43gmail.com" className="flex justify-center lg:justify-start text-lg text-crm" target="_blank" rel="noreferrer">
               <SiGmail size={20} className='text-orange-300' />
               <span className="lg:border-b border-black pl-2 text-lg md:text-2xl hover:text-black">
                 mrzsingh43@gmail.com
@@ -95,7 +94,7 @@ const Footer = () => {
             <a href='https://www.linkedin.com/in/relish-gupta-165692234/' target="_blank" rel="noreferrer">
               <FaLinkedin size={20} className='mx-2 text-sky-500' />
             </a>
-            <a href="mailto:guptarelish333Gmail.com" target="_blank" rel="noreferrer"><SiGmail size={20} className=' text-orange-300' /></a>
+            <a href="mailto:guptarelish333gmail.com" target="_blank" rel="noreferrer"><SiGmail size={20} className=' text-orange-300' /></a>
           </p>
         </div>
       </div>

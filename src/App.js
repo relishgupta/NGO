@@ -4,6 +4,7 @@ import Gallery from "./routes/gallery";
 import Homepage from "./routes/homepage";
 import Footer from "./components/footer";
 import Mission from "./routes/mission";
+import Docs from "./routes/docs";
 
 const App=()=> {
   return (
@@ -15,6 +16,9 @@ const App=()=> {
             <Route index element={<Footer />} />
           </Route>
           <Route path='mission' element={<Mission />}>
+            <Route index element={<Footer />} />
+          </Route>
+          <Route path='docs' element={<Docs />}>
             <Route index element={<Footer />} />
           </Route>
         </Route>
