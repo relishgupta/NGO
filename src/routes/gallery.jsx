@@ -68,6 +68,14 @@ import a62 from '../assets/62.jpg';
 import a63 from '../assets/63.jpg';
 import a64 from '../assets/64.jpg';
 import a65 from '../assets/65.jpg';
+import a68 from '../assets/68.jpg';
+import a69 from '../assets/69.jpg';
+import a70 from '../assets/70.jpg';
+import a71 from '../assets/71.jpg';
+import a72 from '../assets/72.jpg';
+import a73 from '../assets/73.jpg';
+import a74 from '../assets/74.jpg';
+import a75 from '../assets/75.jpg';
 
 const Gallery = () => {
   const images=[
@@ -342,6 +350,38 @@ const Gallery = () => {
     {
       id:68,
       src:award,
+    },
+    {
+      id:69,
+      src:a68,
+    },
+    {
+      id:70,
+      src:a69,
+    },
+    {
+      id:71,
+      src:a70,
+    },
+    {
+      id:72,
+      src:a71,
+    },
+    {
+      id:73,
+      src:a72,
+    },
+    {
+      id:74,
+      src:a73,
+    },
+    {
+      id:75,
+      src:a74,
+    },
+    {
+      id:76,
+      src:a75,
     },
   ]
   return (
