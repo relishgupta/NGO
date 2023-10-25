@@ -76,6 +76,12 @@ import a72 from '../assets/72.jpg';
 import a73 from '../assets/73.jpg';
 import a74 from '../assets/74.jpg';
 import a75 from '../assets/75.jpg';
+import a76 from '../assets/76.jpg';
+import a77 from '../assets/77.jpg';
+import a78 from '../assets/78.jpg';
+import a79 from '../assets/79.jpg';
+import a80 from '../assets/80.jpg';
+import a81 from '../assets/81.jpg';
 
 const Gallery = () => {
   const images=[
@@ -382,6 +388,30 @@ const Gallery = () => {
     {
       id:76,
       src:a75,
+    },
+    {
+      id:77,
+      src:a76,
+    },
+    {
+      id:78,
+      src:a77,
+    },
+    {
+      id:79,
+      src:a78,
+    },
+    {
+      id:80,
+      src:a79,
+    },
+    {
+      id:81,
+      src:a80,
+    },
+    {
+      id:82,
+      src:a81,
     },
   ]
   return (
