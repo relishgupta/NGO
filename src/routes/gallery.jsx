@@ -82,6 +82,9 @@ import a78 from '../assets/78.jpg';
 import a79 from '../assets/79.jpg';
 import a80 from '../assets/80.jpg';
 import a81 from '../assets/81.jpg';
+import a82 from '../assets/82.jpg';
+import a83 from '../assets/82.jpg';
+import a84 from '../assets/82.jpg';
 
 const Gallery = () => {
   const images=[
@@ -412,6 +415,18 @@ const Gallery = () => {
     {
       id:82,
       src:a81,
+    },
+    {
+      id:83,
+      src:a82,
+    },
+    {
+      id:84,
+      src:a83,
+    },
+    {
+      id:85,
+      src:a84,
     },
   ]
   return (
