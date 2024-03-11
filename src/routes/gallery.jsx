@@ -83,8 +83,15 @@ import a79 from '../assets/79.jpg';
 import a80 from '../assets/80.jpg';
 import a81 from '../assets/81.jpg';
 import a82 from '../assets/82.jpg';
-import a83 from '../assets/82.jpg';
-import a84 from '../assets/82.jpg';
+import a83 from '../assets/83.jpg';
+import a84 from '../assets/84.jpg';
+import a85 from '../assets/85.jpg';
+import a86 from '../assets/86.jpg';
+import a87 from '../assets/87.jpg';
+import a88 from '../assets/88.jpg';
+import a89 from '../assets/89.jpg';
+import a90 from '../assets/90.jpg';
+import a91 from '../assets/91.jpg';
 
 const Gallery = () => {
   const images=[
@@ -427,6 +434,34 @@ const Gallery = () => {
     {
       id:85,
       src:a84,
+    },
+    {
+      id:86,
+      src:a85,
+    },
+    {
+      id:87,
+      src:a86,
+    },
+    {
+      id:88,
+      src:a87,
+    },
+    {
+      id:89,
+      src:a88,
+    },
+    {
+      id:90,
+      src:a89,
+    },
+    {
+      id:91,
+      src:a90,
+    },
+    {
+      id:92,
+      src:a91,
     },
   ]
   return (
